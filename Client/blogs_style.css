@@ -1,0 +1,165 @@
+body{
+    margin: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url("https://media.istockphoto.com/vectors/vector-seamless-pattern-vector-id859255000?k=20&m=859255000&s=612x612&w=0&h=pMOstaGaZpLzWOnUxOx6X5-upCxgZVrCmWxp8H93JYQ=");
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    padding: 1%;
+    text-align: right;
+    background-color: rgba(26, 155, 0, 0.911);
+}
+
+.nav{
+    width: 50%;
+}
+
+.name{
+    text-align: left;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 250%;
+    text-decoration:overline;
+    padding-left: 4%;
+    
+}
+
+.links{
+    padding-top: 7px;
+}
+a{
+    padding: 8px;
+    margin: 5px;
+    font-size: 120%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+
+a.active {
+    color: white;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#bloghost{
+    background-color: white;
+    border-radius: 5px;
+    margin: 2px;
+    color: black;
+}
+
+#bloghost:hover{
+    margin: 0%;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 56);
+    color: black;
+    background-color: rgb(255, 255, 56);
+}
+/* body */
+.container{
+    display: flex;
+}
+
+.left, .right{
+    padding: 3%;
+
+}
+
+.left{
+    width: 40%;
+    
+}
+
+.right{
+    width: 60%;
+    background-color: rgba(221, 221, 221, 0.445);
+}
+
+.list{
+    
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2%;
+    font-family: cursive;
+    background-color: rgb(212, 212, 212);
+}
+
+.image{
+    width: 40%;
+}
+
+.brief{
+    width: 60%;
+    padding: 2%;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+}
+
+.read-btn{
+    display: inline;
+    margin: 2%;
+    background-color: transparent;
+    border: 1px solid green;
+    border-radius: 5px;
+    color: green;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 800;
+    font-size: 80%;
+}
+
+.read-btn:hover{
+    background-color: green;
+    color: white;
+}
+
+.latest_img{
+    width: 80%;
+}
+
+.latest{
+    padding-top: 10%;
+}
+
+/* footer */
+footer{
+    background-color: green;
+    color: white;
+}
+
+.footl{
+    width: 30%;
+    padding: 1%;
+    padding-left: 5%;
+    
+}
+.footm{
+    width: 20%;
+    padding-left: 10%;
+    padding-top: 3%;
+    font-size: large;
+}
+.footr{
+    width: 50%;
+    padding: 2%;
+    border-left: 2px solid rgb(255, 255, 255);
+    font-size: 80%;
+    
+    
+}

@@ -1,0 +1,267 @@
+  body{
+    margin: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url("https://media.istockphoto.com/vectors/vector-seamless-pattern-vector-id859255000?k=20&m=859255000&s=612x612&w=0&h=pMOstaGaZpLzWOnUxOx6X5-upCxgZVrCmWxp8H93JYQ=");
+}
+
+
+/* navbar */
+
+.navbar{
+  display: flex;
+  padding: 1%;
+  text-align: right;
+  background-color: rgba(26, 155, 0, 0.911);
+}
+
+.nav{
+  width: 50%;
+}
+
+.name{
+  text-align: left;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 250%;
+  text-decoration:overline;
+  padding-left: 4%;
+  
+}
+
+.links{
+  padding-top: 7px;
+}
+.navbar a{
+  padding: 8px;
+  margin: 5px;
+  font-size: 120%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+
+.navbar a.active {
+  color: white;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+.navbar a:hover{
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#bloghost{
+  background-color: white;
+  border-radius: 5px;
+  margin: 2px;
+  color: black;
+  
+}
+
+#bloghost:hover{
+  margin: 0%;
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 56);
+  color: black;
+  background-color: rgb(255, 255, 56);
+}
+
+
+/* ------------------------------------- */
+
+
+
+
+h1, h2{
+  color: rgba(26, 155, 0, 0.911);
+}
+
+
+.flexContainer, .flexIn{
+    display: flex;
+    text-align: center;
+}
+
+.left{
+    width: 80%;
+    border-right: 2px solid gray;
+}
+.right{
+    width: 20%;
+}
+
+.flexIn, #showEnergy{
+  padding: 10px;
+  margin: 10px;
+}
+
+
+#energy1, #energy2, #energy3, #energy4, #energy5, #energy6{
+  cursor: pointer;
+  background-color: red;
+  width: 23%;
+  margin: auto;
+  border: 2px solid rgba(26, 155, 0, 0.911);
+  color: white;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+  filter: grayscale(60%);
+}
+
+.energyArticle{
+  background-color: rgba(172, 255, 47, 0.5);
+  padding: 10px;
+  text-align: center;
+}
+
+#energy1{
+  background-image: url(https://media.istockphoto.com/photos/solar-panels-with-sunset-and-blue-sky-background-clean-power-energy-picture-id1247794854?b=1&k=20&m=1247794854&s=170667a&w=0&h=p8Pub7pAJdXEtrvzlXeQ2UIcdRFlXxAWrhuzY_XUhec=);
+  background-size: cover;
+  background-position: center;
+}
+
+
+#energy2{
+  background-image: url(https://media.istockphoto.com/photos/aerial-view-of-wind-turbines-and-agriculture-field-picture-id1224819928?b=1&k=20&m=1224819928&s=170667a&w=0&h=sn2XyDa-Qt8XadeNbRydMXrWHwODcZ8Ht_VvKA3gEFo=);
+  background-size: cover;
+  background-position: center;
+}
+
+#energy3{
+  background-image: url(https://media.istockphoto.com/photos/draining-water-from-the-kowloon-reservoir-at-kam-shan-country-park-picture-id1275814249?b=1&k=20&m=1275814249&s=170667a&w=0&h=ZJxyxqmtki4U3xaZwlhjlqneouWmm1shXx5Hfevgun8=);
+  background-size: cover;
+  background-position: center;
+}
+
+#energy4{
+  background-image: url(https://media.istockphoto.com/photos/grand-prismatic-spring-sunrise-yellowstone-national-park-wy-picture-id1028386430?b=1&k=20&m=1028386430&s=170667a&w=0&h=OQ0soSZHCqWHv8MMcOt6RDgq0OJSy0jnSO2vdtxbm7k=);
+  background-size: cover;
+  background-position: center;
+}
+
+#energy5{
+  background-image: url(https://media.istockphoto.com/photos/biogas-plans-picture-id1167642569?b=1&k=20&m=1167642569&s=170667a&w=0&h=2RP-PFpeWqq0-ELopWDTVCoPVWm6N7f5EBvQw0qsgGE=);
+  background-size: cover;
+  background-position: center;
+}
+
+#energy6{
+  background-image: url(https://media.istockphoto.com/photos/drone-aerial-sandy-beach-fishery-bay-picture-id1299745517?b=1&k=20&m=1299745517&s=170667a&w=0&h=pxrgq_Zrt0FciRrCsfJOyfoGTmmqfBFrJOfQMmqfwAY=);
+  background-size: cover;
+  background-position: center;
+}
+
+#energy1:hover, #energy2:hover, #energy3:hover, #energy4:hover, #energy5:hover, #energy6:hover{
+  border-radius: 8px;
+  color: yellow;
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+#showEnergy{
+  text-align: left;
+}
+
+#showEnergy img{
+  margin-left: 35%;
+  border: 2px solid black;
+  width: 300px;
+  height: 200px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* 
+
+.right li{
+  list-style: disc;
+} */
+
+.right a:hover{
+  color: red;
+}
+
+.news1 a, .news2 a, .news3 a{
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+}
+
+.news1, .news2, .news3{
+  text-align: left;
+  padding: 5px;
+}
+
+.news2, .news3, #newsWait{
+  display: none;
+}
+
+#showMore{
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: rgba(26, 155, 0, 0.911);
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+}
+
+#showMore:hover{
+  color: yellow;
+}
+
+.pen{
+  font-size: large;
+}
+
+#emoji{
+  font-size: xx-large;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+
+/* footer CSS */
+footer{
+  background-color: green;
+  color: white;
+}
+
+.footl{
+  width: 30%;
+  padding: 1%;
+  padding-left: 5%;
+  
+}
+.footm{
+  width: 20%;
+  padding-left: 10%;
+  padding-top: 3%;
+  font-size: large;
+  margin-top: 3%;
+}
+.footr{
+  width: 50%;
+  padding: 2%;
+  border-left: 2px solid rgb(255, 255, 255);
+  font-size: 80%;
+  
+  
+}
+
+.footr h2{
+  color: white;
+}
+
+.container{
+  display: flex;
+}

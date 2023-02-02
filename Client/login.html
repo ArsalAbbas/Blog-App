@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+
+    <style>
+        input.ng-invalid.ng-dirty {
+            border-bottom: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <form name="myform" method="post" ng-app="myApp" ng-controller="validateCtrl" novalidate autocomplete="off">
+        <p>Login</p>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" ng-model="email" required class="inputs"><br> <span style="color:red" ng-show="myform.email.$dirty && myform.email.$invalid" id="errorfield"> <span ng-show="myform.email.$error.required">Email is required</span> <span ng-show="myform.email.$error.email">Please enter a valid Email address</span> </span><br>
+
+
+        <label for="password" >Password</label><br> 
+        <input type="password" name="password" ng-model="password" required class="inputs"><br> <span style="color:red" ng-show="myform.password.$dirty && myform.password.$invalid" id="errorfield"> <span ng-show="myform.password.$error.required">Enter Password</span> </span><br>
+
+
+        <input type="button" value="Login" id="login_btn" onclick="submitForm()">
+
+        <table>
+            <tr>
+                <td><center id="not_user">Not a User?</center></td>
+                <td><input type="button" value="SignUp" id="signup_btn" onclick="go_to_signup()"></td>
+            </tr>
+        </table>
+        
+        
+    </form>
+    <div id="error"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+    <script>
+        function submitForm() {
+            event.preventDefault();
+            const email = document.myform.email.value;
+            const password = document.myform.password.value;
+            console.log(email);
+            console.log(password);
+            axios.post("http://localhost:4400/login",{
+                    email,
+                    password
+            }).then((response)=>{
+                console.log(response)
+                alert("You are logged in as " + response.data.name);
+                window.location.replace("Blog_host_form.html");
+            }).catch((err)=>{
+                console.log(err);
+                alert("You have entered wrong email or password. Else SignUp! :)");
+            })
+        }
+
+        function go_to_signup(){
+            window.location.replace("signup.html")
+        }
+    </script>
+    <script> var app = angular.module('myApp', []); app.controller('validateCtrl', function ($scope) { });</script>
+</body>
+</html>

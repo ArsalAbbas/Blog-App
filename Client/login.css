@@ -1,0 +1,111 @@
+/* image source: https://www.pexels.com/photo/blooming-sakura-tree-in-daylight-6830332/ */
+
+body {
+    background-image:   url(https://envato-shoebox-0.imgix.net/2b49/818d-6bdf-432d-9be1-7868d406f276/Green+grass+background.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1400&s=a3bae5912eac5b0a4e6d5205c700f411);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-shadow: 
+     2px 2px 0 rgb(0, 0, 0), 
+     2px -2px 0 rgb(0, 0, 0),
+    -2px 2px 0 rgb(0, 0, 0),
+    -2px -2px 0 rgb(0, 0, 0),
+     2px 0px 0 rgb(0, 0, 0),
+     0px 2px 0 rgb(0, 0, 0), 
+    -2px 0px 0 rgb(0, 0, 0),
+     0px -2px 0 rgb(0, 0, 0);
+}
+
+form {
+    background-color: hsla(0, 2%, 29%, 0.527);
+    text-align: center;
+    font-family: Helvetica;
+    font-size: x-large;
+    font-weight: 900;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+    line-height: 0.6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+  border-radius: 10px;
+  border: none;
+}
+
+.inputs{
+    width: 50%;
+    min-height: 20px;
+}
+
+.remember {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-right: 10rem;
+}
+
+#remember {
+    height: 15px;
+    width: 15px;
+    margin-top: -0.65rem;
+}
+
+#signup_btn, #login_btn {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-family: Helvetica;
+    font-size: 1.5rem;
+    font-weight: 900;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+#signup_btn:hover, #login_btn:hover{
+    color: black;
+    background: white;
+    transition: 1ms;
+    border-radius: 10px;
+}
+
+/* #error {
+  text-align: center;
+  width: 35%;
+  margin: 0 auto;
+  background-color: rgb(245, 140, 157);
+  color: white;
+  font-family: Helvetica;
+  font-size: 2rem;
+} */
+
+#errorfield{
+    font-size: small;
+    font-weight: bolder;
+    background-color: #ffffff70;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#not_user{
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    padding: 10px;
+
+}

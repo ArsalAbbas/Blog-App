@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="#" href="Graphik-Bold.woff">
+</head>
+
+<body>
+<!-- Navbar -->
+    <div class="navbar">
+        <div class="name nav">
+            <u>Ren-Future</u>
+        </div>
+        <div class="links nav">
+            <a class="active-pg" href="home.html">Home</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="research2.html">Research</a>
+            <a style="border-right: 2px solid white;" href="#footer">About</a>
+            <a id="bloghost" href="login.html">Host a blog</a>
+        </div>
+    </div>
+
+<!-- body -->
+    <div class="container">
+        <div class="left">
+            <h3>Why Renewable?</h3>
+            <p>Renewable energy is energy from sources that are naturally replenishing but flow-limited; renewable resources are virtually inexhaustible in duration but limited in the amount of energy that is available per unit of time. <br><br>
+              Until the mid-1800s, wood was the source of nearly all of the nation's energy needs for heating, cooking, and lighting. From the late 1800s until today, fossil fuels—coal, petroleum, and natural gas—have been the major sources of energy. Hydropower and wood were the most used renewable energy resources until the 1990s. Since then, the amounts of U.S. energy consumption from biofuels, geothermal energy, solar energy, and wind energy have increased. Total U.S. renewable energy production and consumption reached record highs in 2020.</p>
+        </div>
+        <div class="right">
+            <!-- slideshow -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade slide1">
+                  <img src="https://wallpaperaccess.com/full/2183826.jpg" style="width: 55vw; height: 28vw;">
+                  <div class="text"><b>A transition to clean energy is about making an investment in the Future!</b></div>
+                </div>
+                
+                <div class="mySlides fade slide2">
+                  <img src="https://www.grupocobra.com//wp-content/uploads/2021/04/1-7-1.jpg" style="width: 55vw; height: 28vw;">
+                  <div class="text"><b>The future is green energy, sustainability and Renewable Techniques!</b></div>
+                </div>
+                
+                <div class="mySlides fade slide3">
+                  <img src="https://brookfieldrenewableus.com/wp-content/uploads/2020/05/lightbulb-renewable-energy.jpg" style="width: 55vw; height: 28vw;">
+                  <div class="text"><b>There's an emmense potential in renewable energy to change the world!</b></div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        </div>
+
+        
+    </div>
+    <br>
+    
+    <br>
+
+
+
+<!-- transition -->
+    <div class="container">
+      <div id="col1" class="col">
+        <p class="top-left"><b> | Top Blog</b></p>
+        <a href="blogs.html"><button type="button" class="read-btn">Read</button></a>
+        <p class="t-text">To read on the blogs about different energies and enlight yourself with the future aspects of 
+          renewable energies and why it is so important to switch over to renewable resources. </p>
+      </div>
+      <div id="col2" class="col">
+        <p class="top-left"><b> | Research</b></p>
+        <a href="research2.html"><button type="button" class="read-btn">Read</button></a>
+        <p class="t-text">There is always a proof for every transition, and research plays an important role to display the 
+          proof of what renewable energies can do! </p>
+      </div>
+      <div id="col3" class="col">
+        <p class="top-left"><b> | Innovation</b></p>
+        <button type="button" class="read-btn">Read</button>
+        <p class="t-text">This is the blog about the infinite possibilities the space contains in itself,
+            and we're just at the doorstep of exploring all of them. Let's explore the view of this doorstep! </p>
+      </div>
+    </div>
+    <br>
+    
+    <br>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footl">
+               <p style="margin-bottom: 0%; color: yellow;" class="name"> <u> Ren-Future </u></p><br>
+                <i>The nation that leads in Renewable energy is the Nation that leads the world!</i>
+            </div>
+
+            <div class="footm">
+        
+                Blogs <br><br>
+                News <br><br>
+                Research <br><br>
+
+            </div>
+            <div class="footr">
+                <p>Made with <3 by:</p>
+                <p>SAHIL NANDAL, ARIHANT JAIN, SYED ARSAL ABBAS</p>
+
+                <h2>Contact us at:</h2>
+                sahil.nandal2020@vitstudent.ac.in <br><br>
+                arihant.jain2020@vitstudent.ac.in <br><br>
+                syedarsal.abbas@vitstudent.ac.in 
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
